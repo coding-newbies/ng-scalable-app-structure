@@ -7,13 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { ErrorModule } from 'app/modules/error/error.module';
 import { AppRoutes } from 'app/app.routing';
 import { AppComponent } from 'app/components/app/app.component';
-import { HomeComponent } from 'app/components/home/home.component';
 import { SharedModule } from 'app/modules/shared/shared.module';
 import { DataService } from 'app/modules/shared/http-services/data.service';
-import { RxRootStoreModule } from 'app/modules/shared/stores/rxjs-store/rx-root-store.module';
 import { EnvServiceProvider } from 'app/modules/shared/environement-service/env.provider';
-import { UserAsyncService } from 'app/modules/shared/business-models/user/user.async-service';
-import { UserHttpService } from 'app/modules/shared/http-services/user.http-service';
+import { RxRootStoreModule } from 'app/store/rxjs';
 
 @NgModule({
   imports: [
@@ -32,8 +29,7 @@ import { UserHttpService } from 'app/modules/shared/http-services/user.http-serv
     RxRootStoreModule.forRoot()
   ],
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   providers: [
     EnvServiceProvider

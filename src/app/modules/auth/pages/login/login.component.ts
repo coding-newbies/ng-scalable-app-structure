@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { LoginCredentials, AuthBizModel } from 'app/modules/shared/business-models/auth';
+import { AuthBizModel } from 'app/modules/auth/core';
+import { LoginCredentials } from 'app/modules/auth/models';
 
 @Component({
   selector: 'app-login',

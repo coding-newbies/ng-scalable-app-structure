@@ -1,7 +1,7 @@
 import { filter } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { CommandDispatcher } from 'app/modules/shared/dispatchers';
-import { Action, GetType, GetSubType } from 'app/modules/shared/stores/action.interface';
+import { Action, GetType, GetSubType } from 'app/core';
 
 export abstract class BaseDispatcher implements CommandDispatcher {
   constructor( ) { }

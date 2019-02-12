@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthRouting } from 'app/modules/auth/auth.routing';
-import { AuthRxStoreModule } from 'app/modules/shared/stores/rxjs-store/features/auth';
-import { AuthAsyncService } from 'app/modules/shared/business-models/auth';
-import { AuthHttpService } from 'app/modules/shared/http-services/auth.http-service';
+import { AuthAsyncService, AuthHttpService } from 'app/modules/auth/services';
+import { AuthRxStoreModule } from 'app/modules/auth/store/rxjs';
 
 @NgModule({
   declarations: [LoginComponent],
